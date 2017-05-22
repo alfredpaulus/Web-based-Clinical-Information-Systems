@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageCISReception.master.cs" Inherits="CIS_MasterPageCISReception" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+		<title>FortMED Web CIS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+
+    <!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/assets/js/jquery.onvisible.min.js"></script>
+			<script src="/assets/js/skel.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/assets/js/main.js"></script>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="no-sidebar">
+    <form id="form1" runat="server">
+    		<!-- Header -->
+			<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="Default.aspx" id="logo"><img border="0" alt="FortMED Clinics Web CIS" src="/images/logo1.png"/></a></h1>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="/CIS/Reception/ReceptionHome.aspx">Reception</a></li>
+                                <li><a href="/CIS/Reception/Registration/RegistrationHome.aspx">Registration</a>
+                                    <ul>
+                                        <li><a href="/CIS/Reception/Registration/RegistrationBillingHome.aspx">Registration Home</a></li>
+                                        <li><a href="/CIS/Reception/Registration/RegistrationBilling.aspx">Billing</a></li>
+                                        <li><a href="/CIS/Reception/Registration/RegistrationBillingTransactionHistory.aspx">Transaction History</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/CIS/Reception/ReceptionNewPatient.aspx">New Patient</a></li>
+								<li><a href="/CIS/Reception/ReceptionManageAppointments.aspx">Manage Appointments</a></li>
+								<li><a href="/CIS/Reception/ReceptionQueue.aspx">Queue</a></li>
+								<li><a href="/CIS/Reception/ReceptionSchedules.aspx">Schedules</a></li>
+                                <li><asp:LinkButton ID="lbtnLogin" runat="server" Text="Login" Visible="True"></asp:LinkButton>
+                                    <ul>
+                                        <li><asp:LinkButton ID="lbtnLogout" runat="server" Visible="False">Logout</asp:LinkButton></li>
+                                    </ul>
+                                </li>
+							</ul>
+						</nav>
+
+				</div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+			<!-- Footer -->
+			<div id="footer">
+					<div class="container">
+						<hr />
+						<div class="row">
+							<div class="12u">
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<%--<li>&copy;2016 BCM. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>--%>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageCISRegistration.master.cs" Inherits="CIS_Registration_MasterPageCISRegistration" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+		<title>FortMED Web CIS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+
+    <!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/assets/js/jquery.onvisible.min.js"></script>
+			<script src="/assets/js/skel.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/assets/js/main.js"></script>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="no-sidebar">
+    <form id="form1" runat="server">
+    		<!-- Header -->
+			<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="index.html" id="logo"><img border="0" alt="FortMED Clinics Web CIS" src="/images/logo1.png"/></a></h1>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="/CIS/Registration/RegistrationHome.aspx">Home</a></li>
+                                <li><a href="/CIS/Registration/RegistrationBilling.aspx">Billing</a></li>
+								<li><a href="/Default.aspx">Queue</a></li>
+								<li><a href="/Default.aspx">Schedules</a></li>
+                                <li><a href="/Default.aspx">Logged in as: Admin</a></li>
+							</ul>
+						</nav>
+
+				</div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+			<!-- Footer -->
+			<div id="footer">
+					<div class="container">
+						<hr />
+						<div class="row">
+							<div class="12u">
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy;2016 BCM. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+    </form>
+</body>
+</html>
